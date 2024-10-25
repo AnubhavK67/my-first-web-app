@@ -19,7 +19,7 @@
 
     <script>
         async function list() {
-  const endpoint = 'https://proud-flower-0ebc78110.5.azurestaticapps.net/.github/api';
+  const endpoint = 'https://proud-flower-0ebc78110.5.azurestaticapps.net/.github/api/function.json';
   const response = await fetch(endpoint);
   const data = await response.json();
   console.table(data.value);
