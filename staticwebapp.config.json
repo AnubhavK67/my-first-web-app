@@ -1,4 +1,4 @@
-
+export DATABASE_CONNECTION_STRING='Server=tcp:mysqlserver67.database.windows.net,1433;Initial Catalog=mySampleDatabase;Persist Security Info=False;User ID=Anubhav;Password=Acompany001#;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
 {
   "$schema": "https://github.com/Azure/data-api-builder/releases/latest/download/dab.draft.schema.json",
   "data-source": {
@@ -6,7 +6,7 @@
     "options": {
       "set-session-context": false 
     },
-    "connection-string": "@env('Server=tcp:mysqlserver67.database.windows.net,1433;Initial Catalog=mySampleDatabase;Persist Security Info=False;User ID=Anubhav;Password=Acompany001#;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;')"
+    "connection-string": "@env('DATABASE_CONNECTION_STRING')"
   },
   "runtime": {
     "rest": {
