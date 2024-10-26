@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-
-
 
     <h1>Static Web Apps Database Connections</h1>
 <blockquote>
@@ -19,12 +14,11 @@
 
     <script>
         async function list() {
-  const endpoint = 'https://proud-flower-0ebc78110.5.azurestaticapps.net/.github/api/function.json';
+  const endpoint = '/data-api/rest/Person';
   const response = await fetch(endpoint);
   const data = await response.json();
   console.table(data.value);
 }
-   
     </script>
 </body>
 
